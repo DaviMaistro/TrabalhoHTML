@@ -1,0 +1,66 @@
+
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #dbdbdb;
+}
+/*Aqui configurei os "h1", "h2", "h3" e "p" gerais, e caso necessário reescrevo algum elemento específico usando classe ou id*/
+
+h1,h2,h3{
+    font-size: 40px;
+    color: #ff0000;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    margin: 5px;
+}
+
+.Animal{
+    /*Tentei deixar as informações dos animais separadas umas das outras usando border,
+    e com o margin e o padding dei mais espaçamento para organizar*/
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 5px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-style: groove;
+}
+
+#textoHeader{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+div + p {
+    /*Como precisava de mais uma estilização, destaquei duas linhas dos "p"s dos animais*/
+    color: orangered
+;}
+
+.textoAnimal{
+    text-align: justify;
+    text-align: center;
+}
+
+img{
+    /*Improvisei para centralizar a imagem com margin-left já que ainda não ensinou flexbox*/
+    margin-left: 40%;
+}
+
+ul{
+    text-align: center;
+}
+
+ol{
+padding: 20px;
+}
