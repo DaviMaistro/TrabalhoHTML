@@ -14,7 +14,7 @@
         justify-content: center;
     }
 
-
+    
 
     label {
         display: block;     
@@ -28,6 +28,8 @@
         border-radius: 10px;
         width: 400px;
         margin-top: 30px;
+        border: 1px solid #8b8b8b;
+        justify-content: center;
     }
 
     input[type="button"]:hover {
@@ -36,7 +38,7 @@
     }
 
     input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus {
-    background-color: lightblue;
+    background-color: rgb(190, 224, 235);
     }
 
 
@@ -44,56 +46,85 @@
         background-color: rgb(0, 0, 0);
         color: white;
 }
+    .grupo {
+        border: 1px solid #8b8b8b;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 0px;
+        border-radius: 10px;
+    }
+    #enviar {
+    margin-bottom: 15px;  
+    }
     </style>
 </head>
 <body>
     <div id ="bloco">
         <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            <br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <br>
-
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
-            <br>
-
-            <label for="data">Data de nascimento:</label>
-            <input type="date" id="data" name="data">
-            <br>
-
-            <label for="curso">Curso:</label>
-            <input type="password" id="curso" name="curso">
-            <br>
-
-            <label>Sexo:</label>
-            <input type="radio" id="masculino" name="sexo" value="masculino">
-            <label for="masculino">Masculino</label>
-
-            <input type="radio" id="feminino" name="sexo" value="feminino">
-            <label for="feminino">Feminino</label>
-
-            <input type="radio" id="Outro" name="sexo" value="outro">
-            <label for="Outro">Outro</label>
-            <br>
-
-            <label>Interesses:</label>
-            <input type="text" id="interesses" name="interesses">
-            <br>
-
-            <label for="comentarios">Comentários:</label>
-            <text id="comentarios" name="comentarios"></textarea>
-            <br>
-
-            <label for="foto">Foto:</label>
-            <input type="file" id="foto" name="foto">
-            <br>
+            <div class="grupo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <br>
+            </div>
             
-            <input type="button" value="apagar dados">
-            <input type="submit" value="Enviar">
+            <div class="grupo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+            </div>
+
+            <div class="grupo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+                <br>
+            </div>
+                
+            <div class="grupo">
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data">
+                <br>
+            </div>
+
+            <div class="grupo">
+                <label for="curso">Curso:</label>
+                <input type="password" id="curso" name="curso">
+                <br>
+            </div>
+
+            <div class="grupo">
+                <label>Sexo:</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" id="Outro" name="sexo" value="outro">
+                <label for="Outro">Outro</label>
+                <br>
+            </div>
+            <div class="grupo">
+                <label>Interesses:</label>
+                <input type="text" id="interesses" name="interesses">
+                <br>
+            </div>
+
+            <div class="grupo">
+                <label for="comentarios">Comentários:</label>
+                <text id="comentarios" name="comentarios"></text>
+                <br>
+            </div>
+
+            <div class="grupo">
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto">
+                <br>
+                
+                <input type="button" value="apagar dados">
+                <input type="submit" value="Enviar" id ="enviar">
+            </div>
         </form>
    </div> 
 </body>
