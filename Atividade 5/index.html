@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    body {
+        background-color: #f0f0f0;
+        font-family: comic sans ms;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    label {
+        display: block;     
+        margin-bottom: 5px;
+    }
+
+    #bloco {
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    input[type="button"]:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus {
+    background-color: lightblue;
+    }
+
+
+    input[type="submit"]:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+}
+    </style>
+</head>
+<body>
+    <div id ="bloco">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <br>
+
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data">
+            <br>
+
+            <label for="curso">Curso:</label>
+            <input type="password" id="curso" name="curso">
+            <br>
+
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="Outro" name="sexo" value="outro">
+            <label for="Outro">Outro</label>
+            <br>
+
+            <label>Interesses:</label>
+            <input type="text" id="interesses" name="interesses">
+            <br>
+
+            <label for="comentarios">Comentários:</label>
+            <text id="comentarios" name="comentarios"></textarea>
+            <br>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto">
+            <br>
+            
+            <input type="button" value="apagar dados">
+            <input type="submit" value="Enviar">
+        </form>
+   </div> 
+</body>
+</html>
