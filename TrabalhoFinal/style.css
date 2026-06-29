@@ -1,0 +1,370 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(37, 41, 75);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    
+    margin: 0;
+}
+
+
+.barra {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 59, 87);
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(129, 133, 172);
+}
+
+#opcoes:hover {
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.opcoes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#blocoprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    margin: 10px;
+    padding: 10px;
+
+    border: 2px solid rgb(37, 41, 75);
+    border-radius: 10px;
+}
+
+#bodyhistorico #blocoprincipal{
+    background-color: white;
+    border: 0;
+}
+
+.divAcademico img{
+    width: 150px;
+}
+.divProjetos img{
+    width: 150px;
+}
+
+img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#sobre{
+    width: 100%;
+    max-width: 800px;
+}
+
+#cont{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 10px;
+}
+.item {
+    border: 2px solid black;
+    background-color: rgb(214, 214, 214);
+      color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 8px;
+      padding-bottom: 10px;
+}
+
+.item img{
+    width: 150px;
+}
+
+footer{
+    padding: 10px;
+    padding-right: 0;
+    display: flex;
+    width: 100%;
+    background-color: rgb(37, 41, 75);
+    box-sizing: border-box;
+}
+
+footer p, a{
+    margin: 0px;
+    color: white;
+}
+
+footer img{
+    border-radius: 0;
+    width: 30px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#habilidades{
+    display: flex;
+    justify-content: center;
+}
+
+
+.divAcademico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left:30px;
+    border: 2px solid rgb(37, 41, 75);
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+    
+}
+
+
+
+.divProjetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left:30px;
+    border: 2px solid rgb(37, 41, 75);
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+}
+#bodyProjetos #blocoprincipal{
+    background-color: white;
+    border: 0;
+}
+@media (max-width: 768px) {
+
+    #localbotao {
+        display: none;
+    }
+    .conteudo {
+        flex-direction: column;
+    }
+    .barra {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
+
+    .opcoes {
+        margin: 5px;
+    }  
+
+#blocoprincipal {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 5px;
+    padding:60px;
+    padding-top:80px;
+    padding-bottom:80px;
+
+    gap: 10px;
+}
+
+    #sobre p {
+        margin: 4px 0;
+        font-size: 0.85rem;
+    }
+    #sobre h1 {
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    #habilidades h2 {
+        margin: 5px 0;
+        font-size: 1.1rem;
+    }
+
+    #cont {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .item {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer div {
+        margin: 5px 10px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    img {
+        width: 100px;
+    }
+
+.divAcademico img{
+    width: 75px;
+}
+.divProjetos img{
+    width: 75px;
+}
+    .opcoes {
+        width: auto;
+        padding: 6px 10px;
+    }
+
+    #sobre p {
+        font-size: 0.8rem;
+    }
+    .item h3 {
+        font-size: 1rem;
+    }
+
+    .item p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    img {
+        width: 70px;
+    }
+    header h1 {
+        font-size: 1.1rem;
+    }
+
+    #sobre p {
+        font-size: 0.75rem;
+    }
+
+    .opcoes {
+        padding: 4px 6px;
+        font-size: 0.85rem;
+    }
+    footer img {
+        width: 24px;
+    }
+    footer p, footer a {
+        font-size: 0.75rem;
+    }
+}
+
+@keyframes myanimation {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+
+.barra.escondida{
+    width:0;
+}
+
+#localbotao {
+    width: 120px;
+    position: absolute;
+    left: 15px;
+}
+
+#toggleBarra {
+    width: 80%;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(129, 133, 172);
+}
+
+#naobarra {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
